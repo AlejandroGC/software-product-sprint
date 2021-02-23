@@ -14,8 +14,7 @@
 
 /**
  * Add random quote to the page
- */
-console.log("Corriendo Script");
+ */w
 
 function addRandomQuote() {
     // Array with different type of stuff I love.
