@@ -13,6 +13,23 @@
 // limitations under the License.
 
 /**
+ * Add random quote to the page
+ */
+console.log("Corriendo Script");
+
+function addRandomQuote() {
+    // Array with different type of stuff I love.
+    const quotes = ['I love cats and dogs!', 'I love traveling!', 'I love programming!', 'I love soccer!'];
+
+    // Pick a random quote.
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    // Add it to the page.
+    const quoteContainer = document.getElementById('quote-container');
+    quoteContainer.innerText = quote;
+}
+
+/**
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
