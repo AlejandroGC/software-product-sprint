@@ -4,16 +4,75 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+      <div id="menu">
+        <h1>Alex's Portfolio</h1>
+        <a href="gallery.html" id="menu-options"><h2>Gallery</h2></a>
+      </div>
+      <hr>
+    <!-- About Me Section -->
+      <h3>About Me</h3>
+      <section>
+        <div class="profile">
+            <img class="portrait" src="/img/me.png" alt="profile picture">
+            <p>
+                Hello! My name is <b>Alejandro Daniel Gonzalez Carrillo</b>, you can call me <b>Alex</b>. I'm 20 years old. <br>
+                I'm in second year at <b>Tecnologico de Monterrey</b>, coursing a degree in <b>computer science</b>.
+            </p>
+        </div>
+        <p>
+            I'm looking forward to become an <b>app developer</b> or <b>web developer</b>. And to get to that dream since my first year I started 
+            getting into online courses for web and app development. Also I interviewed a person who as of today works on that, because I 
+            wanted to know how is the daily life of a app developer.
+        </p>
+      </section>
+    <!-- Projects Section -->
+      <section>
+        <h3>Projects</h3>
+        <ul>
+            <li>
+                <h4>Failed Login Search Engine</h4>
+                <p>
+                    - A CLI program that reads from a log file and writes to a file the items that match the users’ query. <br>
+                    - Implemented sorting and search algorithms for the output log file. 
+                </p>
+            </li>
+            <li>
+                <h4>Netflix Movie Database</h4>
+                <p>
+                    - A movie database CLI in C++ using Visual studio code as my final project for my class of “Object-Oriented Programming”. I 
+                    designed the UML and developed the whole code using classes and pointers. Used a text file to read and write information. <br>
+                    - Created an object-oriented model using object inheritance.
+                </p>
+            </li>
+        </ul>
+      </section>
+    <!-- Footer -->      
+    <footer>
+        <div>
+            <h3>Contact Me</h3>
+            <a class="network" href="https://github.com/AlejandroGC"><img src="/img/github.png"></a>
+            <a class="network" href="https://www.linkedin.com/in/alexcgzz/"><img src="/img/linkedin.png"></a>
+        </div>
+        <div class="know-me">
+            <h3>Get to know me better</h3>
+            <div id="footer-right-block">
+                <p>Click here to get a random quote:</p>
+                <button class="button-footer" onclick="addRandomQuote()">Quote</button>
+                <div id="quote-container"></div>
+            </div>
+            <div id="footer-right-block">
+                <p>Click here to get a random message:</p>
+                <button class="button-footer" onclick="addRandomGreeting()">Hello</button>
+                <div id="greeting-container"></div>
+            </div>
+        </div>
+    </footer>
     </div>
   </body>
 </html>

@@ -1,7 +1,81 @@
 #content {
   margin-left: auto;
   margin-right: auto;
-  width: 650px;
+  width: 850px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+div.card {
+    margin: 20px 0 0 0;
+}
+
+#card-img {
+    height: 400px;
+    width: 500px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 30px;
+}
+
+#menu-options {
+    padding: 0 0 0 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#menu-options:hover {
+    padding: 0 0 0 30px;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 5px 0 5px 0;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+img.portrait {
+    border-radius: 50%;
+    margin-right: 40px;
+    height: 100px;
+    width: 100px;
+}
+
+div.profile {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    align-items: initial;
+}
+
+div.know-me{
+    padding-left: 30px;
+}
+
+#footer-right-block {
+    display: flex;
+}
+
+button.button-footer {
+    margin: 5px;
+    padding: 0 20px 0 20px;
+}
+
+a.network > img {
+    height: 35px;
+    width: 35px;
+}
+
+#quote-container {
+  margin-top: 20px;
 }
 
 #greeting-container {
