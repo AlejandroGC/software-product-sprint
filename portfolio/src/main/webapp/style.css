@@ -5,6 +5,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+div.card {
+    margin: 20px 0 0 0;
+}
+
+#card-img {
+    height: 400px;
+    width: 500px;
+}
 
 #menu {
     display: flex;
