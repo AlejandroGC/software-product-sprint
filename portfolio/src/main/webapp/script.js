@@ -14,7 +14,7 @@
 
 /**
  * Add random quote to the page
- */w
+ */
 
 function addRandomQuote() {
     // Array with different type of stuff I love.
