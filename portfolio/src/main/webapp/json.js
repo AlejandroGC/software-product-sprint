@@ -12,3 +12,9 @@ async function getFacts() {
 
 }
 
+// Function that creates a list from a received text.
+function createListElement(text) {
+    const liElement = document.createElement('li');
+    liElement.innerText = text;
+    return liElement;
+}
