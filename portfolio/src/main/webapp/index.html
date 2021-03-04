@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <script src="servlet.js"></script>
+    <script src="json.js"></script>
   </head>
   <body>
     <div id="content">
@@ -15,6 +16,7 @@
         <h1>Alex's Portfolio</h1>
         <a href="gallery.html" id="menu-options"><h2>Gallery</h2></a>
         <a href="/helloWorld" id="menu-options"><h2>Servlet</h2></a>
+        <a href="/facts" id="menu-options"><h2>Facts</h2></a>
       </div>
       <hr>
     <!-- About Me Section -->
@@ -77,6 +79,11 @@
                 <p>Click here to see my hello world using servlet:</p>
                 <button class="button-footer" onclick="showHelloWorld()">Show</button>
                 <p id="helloWorld-container"></p>
+            </div>
+            <div id="footer-right-block">
+                <p>Click here to see my hello world using servlet:</p>
+                <button class="button-footer" onclick="getFacts()">Show</button>
+                <p id="facts-container"></p>
             </div>
         </div>
     </footer>
