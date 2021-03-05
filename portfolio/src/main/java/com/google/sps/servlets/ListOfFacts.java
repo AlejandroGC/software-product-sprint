@@ -18,7 +18,7 @@ public class ListOfFacts extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        ArrayList<String> array = new ArrayList<String>(Arrays.asList("prueba", "prueba2", "prueba3"));
+        ArrayList<String> array = new ArrayList<String>(Arrays.asList("I used to play chess in highschool.", "I play soccer since I am 4 years old.", "I'm always smiling."));
         String json = convertToJsonUsingGson(array);
         response.setContentType("application/json;");
         response.getWriter().println(json);
