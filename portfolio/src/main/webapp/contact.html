@@ -20,14 +20,20 @@
         <a href="contact.html" id="menu-options"><h2>Contact Me</h2></a>
       </div>
       <hr>
-    <!--Places Section-->
+
       <div>
-          <h3>Places</h3>
-          <button onclick="changeVisitPlace()">Visit</button>
-      </div>
-      <div class="card">
-          <img id="card-img">
-          <h4 id="card-title"></h4>
+        <form action="/form-handler" method="POST">
+            <p>Name:</p>
+            <textarea name="name-input"></textarea>
+            <br/>
+            <p>Email:</p>
+            <textarea name="email-input"></textarea>
+            <br/>
+            <p>Message:</p>
+            <textarea name="message-input"></textarea>
+            <br/>
+            <input type="submit" />
+        </form>          
       </div>
     </div>
   </body>
