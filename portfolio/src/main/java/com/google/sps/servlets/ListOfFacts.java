@@ -15,10 +15,11 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/facts")
 public class ListOfFacts extends HttpServlet { 
 
+    ArrayList<String> array = new ArrayList<String>(Arrays.asList("I used to play chess in highschool.", "I play soccer since I am 4 years old.", "I'm always smiling."));
+
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-        ArrayList<String> array = new ArrayList<String>(Arrays.asList("I used to play chess in highschool.", "I play soccer since I am 4 years old.", "I'm always smiling."));
         String json = convertToJsonUsingGson(array);
         response.setContentType("application/json;");
         response.getWriter().println(json);
