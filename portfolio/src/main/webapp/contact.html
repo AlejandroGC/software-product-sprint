@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
-    <script src="gallery.js"></script>
+    <script src="forms.js"></script>
   </head>
-  <body>
+  <body onload="loadForms()">
     <div id="content">
     <!--Menu content-->
       <div id="menu">
@@ -34,6 +34,9 @@
             <br/>
             <input type="submit" />
         </form>          
+
+        <h3>Logs</h3>
+        <ul id="forms-log"></ul>
       </div>
     </div>
   </body>
