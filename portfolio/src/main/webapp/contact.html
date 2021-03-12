@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
-    <script src="gallery.js"></script>
+    <script src="forms.js"></script>
   </head>
-  <body>
+  <body onload="loadForms()">
     <div id="content">
     <!--Menu content-->
       <div id="menu">
@@ -22,18 +22,21 @@
       <hr>
 
       <div>
-        <form action="/form-handler" method="POST">
+        <form action="/form" method="POST">
             <p>Name:</p>
-            <textarea name="name-input"></textarea>
+            <input type="text" name="name-input"></textarea>
             <br/>
             <p>Email:</p>
-            <textarea name="email-input"></textarea>
+            <input type="text" name="email-input"></textarea>
             <br/>
             <p>Message:</p>
-            <textarea name="message-input"></textarea>
+            <input type="text" name="message-input"></textarea>
             <br/>
             <input type="submit" />
         </form>          
+
+        <h3>Logs</h3>
+        <ul id="forms-log"></ul>
       </div>
     </div>
   </body>
